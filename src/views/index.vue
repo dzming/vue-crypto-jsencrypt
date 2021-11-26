@@ -20,6 +20,9 @@
             <button class="encrypt-btn" @click="decrypt">解密</button>
             <p class="msg">{{ decryptMsg }}</p>
         </div>
+        <div style="width:100%;height:300px">
+            <Test2></Test2>
+        </div>
     </div>
 </template>
 
@@ -33,6 +36,9 @@
 				encryptMsg : '' ,
 				decryptMsg : ''
 			}
+        },
+        components:{
+            Test2
         },
         computed:{
             indexChange(){
